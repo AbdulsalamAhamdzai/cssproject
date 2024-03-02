@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Layout Design</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+       :root{
+
+          --lightblueC:orange;
+          --tomatocolor:brown;
+
+       }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: arial ;
+            background: gray;
+        }
+     #container{
+        /* border: 2px solid black; */
+        
+        width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+
+     }
+     #top_bar{
+        background-color: darkblue;
+        text-align: center;
+        color: white;
+        padding: 15px;
+
+     }
+     #menu_bar{
+        background-color: var(--tomatocolor);
+     }
+     #menu_bar ul {
+          margin: 0;
+     }
+     #menu_bar ul li {
+        display: inline-block;
+    
+     }
+     #menu_bar ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 15px;
+
+     }
+     #menu_bar ul li a:hover{
+         background-color: var(--lightblueC);
+         color: black;
+     }
+
+     #content{
+        width: 800px;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+
+     }
+     #content h2{
+         color: blue;
+         text-align: center;
+         font-weight: bold;
+     }
+     #side_bar{
+        float: right;
+        width: 150px;
+        height: 400px;
+        background-color: var(--lightblueC);
+
+     }
+     #side_bar ul {
+        padding: 5px 10px 5px 5px;
+        list-style: none;
+     }
+     #side_bar ul li a{
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        color:black;
+        text-align: center;
+
+
+     }
+
+     #side_bar ul li a:hover{
+        background-color: aqua;
+     }
+
+     #footer{
+        clear: both;
+        background-color: var(--tomatocolor);
+        padding: 10px;
+        text-align: center;   
+        
+     }
+     #footer h4{
+        margin: 0;
+     }
+     .mr{
+      margin: 5px;
+     }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+         <div id="top_bar">
+          <h1>Shamshad Tech</h1>
+         </div>
+        <div id="menu_bar">
+          <ul>
+            <li><a href=" "><i class="fa-solid fa-house mr"></i>Home</a></li>
+            <li><a href=" "><i class="fa-brands fa-servicestack mr"></i>Services</a></li>
+            <li><a href=" "><i class="fa-brands fa-envira mr"></i>Gallery</a></li>
+            <li><a href=" "><i class="fa-solid fa-address-card mr"></i>About</a></li>
+            <li><a href=" "><i class="fa-brands fa-contao mr"></i>Contact</a></li>
+
+          </ul>
+        </div>
+       <div id="content">
+        <h2>Web Basic Layout Design </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam veniam earum corrupti aperiam sed, quaerat labore delectus eius ipsum assumenda ipsa quam dolore facere vitae, dolorum sit aliquam veritatis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam veniam earum corrupti aperiam sed, quaerat labore delectus eius ipsum assumenda ipsa quam dolore facere vitae, dolorum sit aliquam veritatis!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam veniam earum corrupti aperiam sed, quaerat labore delectus eius ipsum assumenda ipsa quam dolore facere vitae, dolorum sit aliquam veritatis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam veniam earum corrupti aperiam sed, quaerat labore delectus eius ipsum assumenda ipsa quam dolore facere vitae, dolorum sit aliquam veritatis!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ullam veniam earum corrupti aperiam sed,  
+
+       </div>
+      <div id="side_bar">
+        <ul>
+            <li><a href=" ">Home</a></li>
+            <li><a href=" ">Services</a></li>
+            <li><a href=" ">Gallery</a></li>
+            <li><a href=" ">About</a></li>
+            <li><a href=" ">Contact</a></li>
+
+          </ul>
+      </div>
+      <div id="footer">
+      <h4>All right Reseved </h4> 
+      </div>
+
+
+
+    </div>
+</body>
+</html>
